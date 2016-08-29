@@ -1,0 +1,18 @@
+<div>
+<div>
+<ul class="menu">
+    <li><a href="#/users">Users</a></li>
+    <!-- <li><a href="#/user1?uid=25">User1</a></li>
+    <li><a href="#/user2?uid=26">User2</a></li> -->    
+    <li><a href="#/user?=0">New User</a></li>
+</ul>
+</div>
+<div  ng-show="showUserDetails">
+{{'DemoPages.UserName' | translate}} : {{user.uid}} - {{firstName}} {{lastName}}
+</div>
+<br>
+<div  ng-show="showUID">
+{{'DemoPages.UserID' | translate}} <input type="text" name="UserID" id="UserID" maxlength="100" required="" ng-model="UserID"/>
+<button   type="button" class="btn btn-primary"  ng-click="btnGo_clicked()"  translate="DemoPages.Go" style="margin-right:50px" ng-disabled="disableControls" ng-show="AllowGo" ></button>
+</div>
+</div>

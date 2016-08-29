@@ -1,0 +1,32 @@
+{
+	  "ui-datepicker": {
+            "DATETIME_FORMATS": {"AMPMS": ["AM","PM"],
+             "DAY": ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+             "MONTH": ["January","February","March","April","May","June","July","August","September","October","November","December"],
+             "SHORTDAY": ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],
+             "SHORTMONTH": ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+			 }},
+	"DemoPages": {
+	"PleaseWait" : "Please Wait...",
+	"UserName" : "User Name",
+	"UserID" : "User ID",
+	"FirstName":"First Name",
+	"LastName":"Last Name",
+	"Go" : "Go",
+	"Delete" : "Delete",
+	"Copy" : "Copy"
+	},
+	"Common": {	
+		"close": "Close",
+		"clear" : "Clear",
+		"today" : "Today",
+		"IncorrectValueMsg" : "The value has been entered incorrectly.",		
+		"SaveMsg" : "All mandatory fields marked with (*) must be filled out in order to save.",
+		"SuccessMessage" : "Data saved successfully.",
+		"invalidValueMsg" : "The value has been entered incorrectly.",
+		"invalidDateMsg" : "Invalid Date. Please enter in (mm/dd/yyyy) format."		
+	},
+	"Messages": {	
+		"DuplicateCorpDivisionName": "Corp Name already exists."
+	}
+}

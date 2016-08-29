@@ -1,0 +1,35 @@
+<demo-header></demo-header>
+<br/>
+<!-- https://scotch.io/tutorials/angularjs-form-validation
+http://jsfiddle.net/ehoury/52ym9Loz/ 
+-->
+<form name="userForm" ng-submit="SubmitForm(userForm.$valid)" ng-disabled="userForm.$invalid" novalidate> <!-- novalidate prevents HTML5 validation since we will be validating ourselves -->
+
+	<p ng-show="userForm.$valid && submitted" class="form-group help-block">User saved successfully.</p>
+	<div class="form-group">
+         <label>{{'DemoPages.UserID' | translate}}</label>  {{uid}}        
+	</div>
+	<br />
+     <!-- First Name -->
+     <div class="form-group" ng-class="{ 'has-error' : userForm.firstName.$invalid && !userForm.firstName.$pristine && submitted }">
+         <label>{{'DemoPages.FirstName' | translate}}</label>
+         <input type="text" name="firstName" class="form-control" ng-model="firstName" required tooltip-html-unsafe="{{'DemoPages.FirstName' | translate}}">
+         <p ng-show="userForm.firstName.$invalid && !userForm.firstName.$pristine && submitted" class="help-block">First Name is required.</p>
+	</div>
+         
+     </div>
+	<br/>
+     <!-- Last Name -->
+     <div class="form-group" ng-class="{ 'has-error' : userForm.lastName.$invalid && !userForm.lastName.$pristine && submitted }">
+         <label>{{'DemoPages.LastName' | translate}}</label>
+         <input type="text" name="lastName" class="form-control" ng-model="lastName" ng-minlength="3" ng-maxlength="8" required tooltip-html-unsafe="{{'DemoPages.LastName' | translate}}">
+         <p ng-show="userForm.lastName.$invalid && !userForm.lastName.$pristine && submitted" class="help-block">Last Name is required.</p>
+         <p ng-show="userForm.lastName.$error.minlength" class="help-block">Last Name is too short.</p>
+  		 <p ng-show="userForm.lastName.$error.maxlength" class="help-block">Last Name is too long.</p>
+     </div>
+     <br/>
+     <!-- SUBMIT BUTTON -->
+     <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Submit</button>
+     
+ </form>
+

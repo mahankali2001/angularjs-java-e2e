@@ -1,0 +1,25 @@
+<demo-header></demo-header>
+<br/>
+
+<select id="selectLang" ng-model="ddlLang" ng-change="SwitchLanguage();" ng-options="opt.Text for opt in Lang track by opt.ID">
+	<!-- <option value="en-US" selected>en-US</option>
+	<option value="en-CA">en-CA</option>
+	<option value="hi-IN">hi-IN</option>  -->
+</select> - {{UserName}} 
+<br/>
+<div>
+	<table ng-table="tableParams" class="table" show-filter="true">
+		<tbody>
+			<tr ng-repeat="u in $data">
+				<td data-title="'DemoPages.UserID' | translate" filter="{ 'uid': 'text'}" sortable="'uid'">
+					<a ng-click="userLink_clicked(u.uid);">{{u.uid}}</a></td>
+				<td data-title="'DemoPages.FirstName' | translate" filter="{ 'firstName': 'text'}"
+					sortable="'firstName'">{{u.firstName}}</td>
+				<td data-title="'DemoPages.LastName' | translate" filter="{ 'lastName': 'text'}"
+					sortable="'lastName'">{{u.lastName}}</td>
+				<td data-title="'DemoPages.Delete' | translate"><a ng-click="deleteLink_clicked(u.uid);">X</a></td>
+				<td data-title="'DemoPages.Copy' | translate"><a ng-click="copyLink_clicked(u.uid);">C</a></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
