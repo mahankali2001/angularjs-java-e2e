@@ -1,7 +1,7 @@
 angulardemorestful
 ==================
 
-Java REST service and AngularJs
+Java REST service and AngularJs + Hibernate + MYSQL
 
-This is a sample project for my blog post at [http://draptik.github.io/blog/2013/07/13/angularjs-example-using-a-java-restful-web-service/](http://draptik.github.io/blog/2013/07/13/angularjs-example-using-a-java-restful-web-service/)
+This is a sample project to see end to end working solution of users module using AngularJS, Jersey Rest service, Hibernate & MYSQL.
 
