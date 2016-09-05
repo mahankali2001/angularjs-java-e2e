@@ -8,8 +8,6 @@
     <name>ngdemo Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
-
-
 	<properties>
 		<hibernate.version>4.3.5.Final</hibernate.version>
 		<org.slf4j-version>1.7.5</org.slf4j-version>
